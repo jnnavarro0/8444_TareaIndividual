@@ -53,7 +53,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="fadein.html">fadeIn()</a>
+                        <a class="nav-link " href="fadeout.html">fadeOut()</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link " href="fadetoggle.html">fadeToggle()</a>
@@ -73,8 +73,8 @@
                <ul>
                   <ul>
                      <li class="active"><a href="index.html">Inicio</a></li>
-                     <li><a href="fadein.html">Json</a></li>
-                     <li><a href="fadeout.html">Ejemplo</a></li>
+                     <li><a href="contenido.html">Json</a></li>
+                     <li><a href="ejemplo.html">Ejemplo</a></li>
                   </ul>
                </ul>
             </div>
@@ -84,97 +84,89 @@
    <!-- header section end -->
    <!-- about section start -->
    <div class="container">
-      <center><b style="font-size: 30px;">EJEMPLOS JSON Y DISEÑO DE DATOS JSON</b></center>
-      <p>A continuación se muestra el contenido de lo que podrían ser distintos archivos json:</p>
-
+      <center><b style="font-size: 30px;">¿Qué es JSON?</b></center>
+      <p style="text-align: justify;">
+         JSON, que significa JavaScript Object Notation, es una formatación usada para estructurar datos en forma de
+         texto y transmitirlos de un sistema a otro, como en aplicaciones cliente-servidor o en aplicaciones móviles.
+         <br> <br>
+         Una manera de emplearlo es a través de requisiciones AJAX, en que la aplicación recupera los datos almacenados
+         en el servidor de hosting sin la necesidad de recargar la página.
+         <br> <br>
+         La especificación del archivo JSON surgió alrededor del año 200, pero solo pasó a formar parte del lenguaje
+         JavaScript después del lanzamiento de la versión 5 del ECMAScript.
+         <br> <br>
+         Actualmente, diversos tipos de lenguaje de programación soportan este formato, además de ser una alternativa
+         más liviana que el modelo XML.
+      </p>
+      <P>
+      <h2>¿Qué es el archivo .json?</h2>
+      <P>
+         En la práctica, .json es un archivo que contiene una serie de datos estructurados en formato de texto y se usa
+         para transferir información entre sistemas. Es importante decir que, a pesar de su origen estar en el lenguaje
+         JavaScript, JSON no es un lenguaje de programación.
+         <br> <br>
+         JSON es una notación para la transferencia de datos que sigue un estándar específico. Por eso, puede emplearse
+         en diferentes lenguajes de programación y de sistemas.
+         <br> <br>
+         Los datos contenidos en un archivo en formato JSON deben estructurarse por medio de una colección de pares con
+         nombre y valor o deben ser una lista ordenada de valores. Sus elementos tienen que contener:
+      </P>
+      <div class="list container">
+         <ul>
+            <p>
+               <li><b>Clave:</b> corresponde al identificador del contenido. Por eso, debe ser una string delimitada por
+                  comillas.</li>
+               <li><b>Valor:</b> representa el contenido correspondiente y puede contener los siguientes tipos de datos:
+                  string, array, object, number, boolean o null.</li>
+            </p>
+         </ul>
+      </div>
+      </P>
+      <h2>Formatación del archivo JSON</h2>
+      <p>
+         Además de la terminación .json en todos los archivos que utilizan este formato, los datos almacenados deben
+         seguir una notación específica, o sea, necesitan organizarse con los siguientes elementos básicos:
+      </p>
+      <div class="list container">
+         <ul>
+            <p>
+         </ul>
+         </ul>
+         <li><b>Llaves { }</b> sirven para delimitar los objetos y son obligatorias para iniciar y terminar el
+            contenido.</li>
+         <li><b>Corchetes [ ]</b> se usan para indicar un array.</li>
+         <li><b>Dos puntos :</b> sirven para separar la clave y su valor correspondiente.</li>
+         <li><b>Coma ,</b> se usa para indicar la separación entre los elementos.</li>
+         </p>
+         </ul>
+      </div>
+      <p>A continuación, te mostramos algunos ejemplos de cómo los datos deben relacionarse en un archivo .json.</p>
       <br>
+      <hr>
+      <p>
+      <h4>String</h4>
+      <samp>{ "ciudad": "Antioquía"}</samp><br><br>
 
-      <table class="table" border="1">
-         <thead>
-            <tr style="background-color: rgb(226, 226, 226);">
-               <th scope="col">Archivo colores1.json</th>
-               <th scope="col">Archivo colores2.json</th>
-               <th scope="col">Archivo colores3.json</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>
-                  <pre>
-                     <samp>
-{
-    "arrayColores":[{
-            "nombreColor":"rojo",
-            "valorHexadec":"#f00"
-        },
-        {
-            "nombreColor":"verde",
-            "valorHexadec":"#0f0"
-        },
-        {
-            "nombreColor":"azul",
-            "valorHexadec":"#00f"
-        },
-        {
-            "nombreColor":"cyan",
-            "valorHexadec":"#0ff"
-        },
-        {
-            "nombreColor":"magenta",
-            "valorHexadec":"#f0f"
-        },
-        {
-            "nombreColor":"amarillo",
-            "valorHexadec":"#ff0"
-        },
-        {
-            "nombreColor":"negro",
-            "valorHexadec":"#000"
-        }
-    ]
-}
-                  </samp>
-               </pre>
-               </td>
-               <td>
-                  <pre>
-                     <samp>
-{
-    "arrayColores":[{
-            "rojo":"#f00",
-            "verde":"#0f0",
-            "azul":"#00f",
-            "cyan":"#0ff",
-            "magenta":"#f0f",
-            "amarillo":"#ff0",
-            "negro":"#000"
-        }
-    ]
-}
-                  </samp>
-               </pre>
-               </td>
-               <td>
-                  <pre>
-                     <samp>
-{
-    "rojo":"#f00",
-    "verde":"#0f0",
-    "azul":"#00f",
-    "cyan":"#0ff",
-    "magenta":"#f0f",
-    "amarillo":"#ff0",
-    "negro":"#000"
-}
-                  </samp>
-               </pre>
-               </td>
-            </tr>
-         </tbody>
-      </table>
+      <h4>Array</h4>
+      <samp>{ <br> &nbsp;&nbsp;"ciudad": "Antioquía" <br> }</samp><br><br>
+
+      <h4>Objeto</h4>
+      <samp>"ciudad": { <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;"ciudad": "Guadalajara", <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;"sigla": "GDL" <br>
+         &nbsp;&nbsp;} <br>
+         }</samp><br><br>
+
+      <h4>String</h4>
+      <samp>{ "ciudades":[ <br>
+         &nbsp;&nbsp;{"ciudad": "Guadalajara", "sigla": "GDL"}, <br>
+         &nbsp;&nbsp;{"ciudad": "Monterrey", "sigla": "MTY"}, <br>
+         &nbsp;&nbsp;{"ciudad": "Guanajuato", "sigla": "GTO"} <br>
+         &nbsp;&nbsp;] <br>
+         }</samp>
+      </p>
    </div>
    <!-- about section end -->
-   <p><br></p>
    <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container">

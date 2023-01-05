@@ -53,7 +53,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="fadein.html">fadeIn()</a>
+                        <a class="nav-link " href="fadeout.html">fadeOut()</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link " href="fadetoggle.html">fadeToggle()</a>
@@ -73,8 +73,8 @@
                <ul>
                   <ul>
                      <li class="active"><a href="index.html">Inicio</a></li>
-                     <li><a href="fadein.html">Ajax</a></li>
-                     <li><a href="fadeout.html">Ejemplo</a></li>
+                     <li><a href="contenido.html">Ajax</a></li>
+                     <li><a href="ejemplo.html">Ejemplo</a></li>
                   </ul>
                </ul>
             </div>
@@ -84,64 +84,58 @@
    <!-- header section end -->
    <!-- about section start -->
    <div class="container">
-      <center><b style="font-size: 30px;">EJEMPLOS AJAX</b></center>
-      <div class="row">
-         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-            <div class="services__content">
-               <div id="demo">
-                  <h2>The XMLHttpRequest Object</h2>
-                  <button type="button" onclick="loadDoc()">Change Content</button>
-               </div>
+      <center><b style="font-size: 30px;">¿Qué es AJAX?</b></center>
+      <div style="text-align: justify;">
+         <p>
+            Ajax (Asynchronous JavaScript and XML) se refiere a un grupo de tecnologías que se utilizan para desarrollar
+            aplicaciones web. Al combinar estas tecnologías, las páginas web parece que son más receptivas puesto que
+            los
+            paquetes pequeños de datos se intercambian con el servidor y las páginas web no se vuelven a cargar cada vez
+            que un usuario realiza un cambio de entrada. Ajax permite que un usuario de la aplicación web interactúe con
+            una página web sin la interrupción que implica volver a cargar la página web. La interacción del sitio web
+            ocurre rápidamente sólo con partes de la página de recarga y renovación.
+         </p>
+         <P>
+         <h4>Ajax se compone de las siguientes tecnologías:</h4>
 
-               <script>
-                  function loadDoc() {
-                     const xhttp = new XMLHttpRequest();
-                     xhttp.onload = function () {
-                        document.getElementById("demo").innerHTML =
-                           this.responseText;
-                     }
-                     xhttp.open("GET", "ajax_info.txt");
-                     xhttp.send();
-                  }
-               </script>
-            </div>
+         <div style="margin-left: 35px;">
+            &#176; XHTML y CSS para presentar información. <br>
+            &#176; DOM (Document Object Model - modelo de objetos de documento) para visualizar e interactuar de forma
+            dinámica la información presentada. <br>
+            &#176; El objeto XMLHttpRequest para manipular los datos de forma asíncrona con el servidor web. <br>
+            &#176; XML, HTML y XSLT para el intercambio y la manipulación de datos. <br>
+            &#176; Se visualiza JavaScript para enlazar solicitudes e información de datos. <br>
          </div>
-         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start" style="border: solid;">
-            <div class="services__pic">
-               <h2>Código</h2>
-               <br>
-               <p>
-                  &#60;!DOCTYPE html> <br>
-                  &#60;html> <br>
-                  &#60;body> <br>
-                  <br>
-                  &#60;div id="demo">
-                  &#60;h2>The XMLHttpRequest Object&#60;/h2> <br>
-                  &#60;button type="button" onclick="loadDoc()">Change Content&#60;/button> <br>
-                  &#60;/div> <br>
-                  <br>
-                  &#60;script> <br>
-                  function loadDoc() { <br>
-                  &nbsp;const xhttp = new XMLHttpRequest(); <br>
-                  &nbsp;&nbsp;xhttp.onload = function() { <br>
-                  &nbsp;&nbsp;document.getElementById("demo").innerHTML =
-                  this.responseText; <br>
-                  &nbsp;} <br>
-                  &nbsp;xhttp.open("GET", "ajax_info.txt"); <br>
-                  &nbsp;xhttp.send(); <br>
-                  } <br>
-                  &#60;/script> <br>
-                  <br>
-                  &#60;/body> <br>
-                  &#60;/html> <br>
-               </p>
-            </div>
-         </div>
+
+         <P>
+            Ajax incorpora estas tecnologías para crear un nuevo enfoque al desarrollo de aplicaciones web. <br>
+            Ajax define un método de iniciar un cliente con la comunicación del servidor sin recargas de páginas.
+            Proporciona una forma de permitir actualizaciones de página parciales. Desde una perspectiva de usuario de
+            página web, significa que la mejora de la interacción con una aplicación web, que proporciona al usuario más
+            control de su entorno, es similar a la de una aplicación de escritorio.
+         </P>
+         <P>
+            En una aplicación web tradicional, las solicitudes HTTP, que se inician mediante la interacción del usuario
+            con
+            la interfaz web, se realizan a un servidor web. El servidor web procesa la solicitud y devuelve una página
+            HTML
+            al cliente. Durante el transporte HTTP, el usuario no puede interactuar con la aplicación web.
+         </P>
       </div>
+      <br>
+      <center><img src="./images/traditionalWebAppModel.gif" alt=""></center>
+      <br>
+      <p>
+         En una aplicación web Ajax, no se interrumpe el usuario en interacciones con la aplicación web. El motor de
+         Ajax o el intérprete JavaScript permite que el usuario interactúe con la aplicación web independientemente del
+         transporte HTTP procedente del servidor o que tenga el servidor como destino representando la interfaz y
+         gestionando las comunicaciones con el servidor en nombre del usuario.
+      </p>
+      <br>
+      <center><img src="./images/ajaxWebAppModel.gif" alt=""></center>
+      <br><br><br>
    </div>
-   </center>
    <!-- about section end -->
-   <p><br></p>
    <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container">

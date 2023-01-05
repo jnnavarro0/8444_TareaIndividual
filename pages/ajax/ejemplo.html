@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
    <!-- basic -->
@@ -10,7 +10,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>XML</title>
+   <title>Ajax</title>
+   <link href="images/favicon.ico" rel="icon">
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -21,7 +22,7 @@
    <!-- Responsive-->
    <link rel="stylesheet" href="css/responsive.css">
    <!-- fevicon -->
-   <link rel="icon" href="images/favicon.ico" type="image/gif" />
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
    <!-- Scrollbar Custom CSS -->
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <!-- Tweaks for older IEs-->
@@ -41,7 +42,7 @@
       <div class="header_main">
          <div class="mobile_menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+               <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -49,19 +50,16 @@
                <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">INICIO</a>
+                        <a class="nav-link" href="index.html">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="./about.html">Método animate()</a>
+                        <a class="nav-link" href="fadein.html">fadeIn()</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="services.html">Propiedades</a>
+                        <a class="nav-link " href="fadetoggle.html">fadeToggle()</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link " href="blog.html">Valores</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Funcionalidad de cola</a>
+                        <a class="nav-link " href="fadeto.html">fadeTo()</a>
                      </li>
                   </ul>
                </div>
@@ -69,54 +67,87 @@
          </div>
          <div class="container-fluid">
             <div class="logo"><a href="index.html">
-                  <h1 class="about_taital" style="color: white;">XML</h1>
+                  <h1 class="banner_taital">Ajax</h1>
                </a></div>
             <div class="menu_main">
                <ul>
-                  <li><a href="index.html">INICIO</a></li>
-                  <li class="active"><a href="about.html">XML</a></li>
-                  <li><a href="services.html">Ejemplo</a></li>
+                  <ul>
+                     <li class="active"><a href="index.html">Inicio</a></li>
+                     <li><a href="contenido.html">Ajax</a></li>
+                     <li><a href="ejemplo.html">Ejemplo</a></li>
+                  </ul>
                </ul>
             </div>
          </div>
       </div>
    </div>
    <!-- header section end -->
-   <br><br>
    <!-- about section start -->
    <div class="container">
-      <center><b style="font-size: 30px;">¿Qué es XML?</b></center>
-      <p style="text-align: justify;">
-         XML es el acrónimo de Extensible Markup Language, es decir, es un lenguaje de marcado que define un conjunto de
-         reglas para la codificación de documentos. ¿Te parece complicado? Entonces, vamos a simplificarlo.
+      <center><b style="font-size: 30px;">EJEMPLO</b></center>
+      <br><br>
+      <div class="row">
          <br><br>
-         El lenguaje de marcado es un conjunto de códigos que se pueden aplicar en el análisis de datos o la lectura de
-         textos creados por computadoras o personas. El lenguaje XML proporciona una plataforma para definir elementos
-         para crear un formato y generar un lenguaje personalizado.
-         <br><br>
-         Un archivo XML se divide en dos partes: prolog y body. La parte prolog consiste en metadatos administrativos,
-         como declaración XML, instrucción de procesamiento opcional, declaración de tipo de documento y comentarios. La
-         parte del body se compone de dos partes: estructural y de contenido (presente en los textos simples).
-         <br><br>
-         El diseño XML se centra en la simplicidad, la generalidad y la facilidad de uso y, por lo tanto, se utiliza
-         para varios servicios web. Tanto es así que hay sistemas destinados a ayudar en la definición de lenguajes
-         basados ​​en XML, así como APIs que ayudan en el procesamiento de datos XML - que no deben confundirse con
-         HTML.
-      </p>
-   </div>
-   <br>
+         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__content">
+               <div id="demo">
+                  <h2>The XMLHttpRequest Object</h2>
+                  <button type="button" onclick="loadDoc()">Change Content</button>
+               </div>
 
-   <!-- about section end -->
-   <!-- footer section start -->
-   <div class="footer_section layout_padding">
-      <div class="container">
+               <script>
+                  function loadDoc() {
+                     const xhttp = new XMLHttpRequest();
+                     xhttp.onload = function () {
+                        document.getElementById("demo").innerHTML =
+                           this.responseText;
+                     }
+                     xhttp.open("GET", "ajax_info.txt");
+                     xhttp.send();
+                  }
+               </script>
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start" style="border: solid;">
+            <div class="services__pic">
+               <h2>Código</h2>
+               <br>
+               <p>
+                  &#60;!DOCTYPE html> <br>
+                  &#60;html> <br>
+                  &#60;body> <br>
+                  <br>
+                  &#60;div id="demo">
+                  &#60;h2>The XMLHttpRequest Object&#60;/h2> <br>
+                  &#60;button type="button" onclick="loadDoc()">Change Content&#60;/button> <br>
+                  &#60;/div> <br>
+                  <br>
+                  &#60;script> <br>
+                  function loadDoc() { <br>
+                  &nbsp;const xhttp = new XMLHttpRequest(); <br>
+                  &nbsp;&nbsp;xhttp.onload = function() { <br>
+                  &nbsp;&nbsp;document.getElementById("demo").innerHTML =
+                  this.responseText; <br>
+                  &nbsp;} <br>
+                  &nbsp;xhttp.open("GET", "ajax_info.txt"); <br>
+                  &nbsp;xhttp.send(); <br>
+                  } <br>
+                  &#60;/script> <br>
+                  <br>
+                  &#60;/body> <br>
+                  &#60;/html> <br>
+               </p>
+            </div>
+         </div>
       </div>
    </div>
-   <!-- footer section end -->
+   </center>
+   <!-- about section end -->
+   <p><br></p>
    <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container">
-         <p class="copyright_text">2020 All Rights Reserved. Design by</a></p>
+         <p class="copyright_text">2022 All Rights Reserved.</a></p>
       </div>
    </div>
    <!-- copyright section end -->

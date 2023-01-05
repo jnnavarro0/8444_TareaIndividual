@@ -10,7 +10,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Json</title>
+   <title>Ajax</title>
    <link href="images/favicon.ico" rel="icon">
    <meta name="keywords" content="">
    <meta name="description" content="">
@@ -67,13 +67,13 @@
          </div>
          <div class="container-fluid">
             <div class="logo"><a href="index.html">
-                  <h1 class="banner_taital">Json</h1>
+                  <h1 class="banner_taital">Ajax</h1>
                </a></div>
             <div class="menu_main">
                <ul>
                   <ul>
                      <li class="active"><a href="index.html">Inicio</a></li>
-                     <li><a href="fadein.html">Json</a></li>
+                     <li><a href="fadein.html">Ajax</a></li>
                      <li><a href="fadeout.html">Ejemplo</a></li>
                   </ul>
                </ul>
@@ -84,87 +84,56 @@
    <!-- header section end -->
    <!-- about section start -->
    <div class="container">
-      <center><b style="font-size: 30px;">¿Qué es JSON?</b></center>
-      <p style="text-align: justify;">
-         JSON, que significa JavaScript Object Notation, es una formatación usada para estructurar datos en forma de
-         texto y transmitirlos de un sistema a otro, como en aplicaciones cliente-servidor o en aplicaciones móviles.
-         <br> <br>
-         Una manera de emplearlo es a través de requisiciones AJAX, en que la aplicación recupera los datos almacenados
-         en el servidor de hosting sin la necesidad de recargar la página.
-         <br> <br>
-         La especificación del archivo JSON surgió alrededor del año 200, pero solo pasó a formar parte del lenguaje
-         JavaScript después del lanzamiento de la versión 5 del ECMAScript.
-         <br> <br>
-         Actualmente, diversos tipos de lenguaje de programación soportan este formato, además de ser una alternativa
-         más liviana que el modelo XML.
-      </p>
-      <P>
-      <h2>¿Qué es el archivo .json?</h2>
-      <P>
-         En la práctica, .json es un archivo que contiene una serie de datos estructurados en formato de texto y se usa
-         para transferir información entre sistemas. Es importante decir que, a pesar de su origen estar en el lenguaje
-         JavaScript, JSON no es un lenguaje de programación.
-         <br> <br>
-         JSON es una notación para la transferencia de datos que sigue un estándar específico. Por eso, puede emplearse
-         en diferentes lenguajes de programación y de sistemas.
-         <br> <br>
-         Los datos contenidos en un archivo en formato JSON deben estructurarse por medio de una colección de pares con
-         nombre y valor o deben ser una lista ordenada de valores. Sus elementos tienen que contener:
-      </P>
-      <div class="list container">
-         <ul>
-            <p>
-               <li><b>Clave:</b> corresponde al identificador del contenido. Por eso, debe ser una string delimitada por
-                  comillas.</li>
-               <li><b>Valor:</b> representa el contenido correspondiente y puede contener los siguientes tipos de datos:
-                  string, array, object, number, boolean o null.</li>
-            </p>
-         </ul>
-      </div>
-      </P>
-      <h2>Formatación del archivo JSON</h2>
-      <p>
-         Además de la terminación .json en todos los archivos que utilizan este formato, los datos almacenados deben
-         seguir una notación específica, o sea, necesitan organizarse con los siguientes elementos básicos:
-      </p>
-      <div class="list container">
-         <ul>
-            <p>
-         </ul>
-         </ul>
-         <li><b>Llaves { }</b> sirven para delimitar los objetos y son obligatorias para iniciar y terminar el
-            contenido.</li>
-         <li><b>Corchetes [ ]</b> se usan para indicar un array.</li>
-         <li><b>Dos puntos :</b> sirven para separar la clave y su valor correspondiente.</li>
-         <li><b>Coma ,</b> se usa para indicar la separación entre los elementos.</li>
+      <center><b style="font-size: 30px;">¿Qué es AJAX?</b></center>
+      <div style="text-align: justify;">
+         <p>
+            Ajax (Asynchronous JavaScript and XML) se refiere a un grupo de tecnologías que se utilizan para desarrollar
+            aplicaciones web. Al combinar estas tecnologías, las páginas web parece que son más receptivas puesto que
+            los
+            paquetes pequeños de datos se intercambian con el servidor y las páginas web no se vuelven a cargar cada vez
+            que un usuario realiza un cambio de entrada. Ajax permite que un usuario de la aplicación web interactúe con
+            una página web sin la interrupción que implica volver a cargar la página web. La interacción del sitio web
+            ocurre rápidamente sólo con partes de la página de recarga y renovación.
          </p>
-         </ul>
+         <P>
+         <h4>Ajax se compone de las siguientes tecnologías:</h4>
+
+         <div style="margin-left: 35px;">
+            &#176; XHTML y CSS para presentar información. <br>
+            &#176; DOM (Document Object Model - modelo de objetos de documento) para visualizar e interactuar de forma
+            dinámica la información presentada. <br>
+            &#176; El objeto XMLHttpRequest para manipular los datos de forma asíncrona con el servidor web. <br>
+            &#176; XML, HTML y XSLT para el intercambio y la manipulación de datos. <br>
+            &#176; Se visualiza JavaScript para enlazar solicitudes e información de datos. <br>
+         </div>
+
+         <P>
+            Ajax incorpora estas tecnologías para crear un nuevo enfoque al desarrollo de aplicaciones web. <br>
+            Ajax define un método de iniciar un cliente con la comunicación del servidor sin recargas de páginas.
+            Proporciona una forma de permitir actualizaciones de página parciales. Desde una perspectiva de usuario de
+            página web, significa que la mejora de la interacción con una aplicación web, que proporciona al usuario más
+            control de su entorno, es similar a la de una aplicación de escritorio.
+         </P>
+         <P>
+            En una aplicación web tradicional, las solicitudes HTTP, que se inician mediante la interacción del usuario
+            con
+            la interfaz web, se realizan a un servidor web. El servidor web procesa la solicitud y devuelve una página
+            HTML
+            al cliente. Durante el transporte HTTP, el usuario no puede interactuar con la aplicación web.
+         </P>
       </div>
-      <p>A continuación, te mostramos algunos ejemplos de cómo los datos deben relacionarse en un archivo .json.</p>
       <br>
-      <hr>
+      <center><img src="./images/traditionalWebAppModel.gif" alt=""></center>
+      <br>
       <p>
-      <h4>String</h4>
-      <samp>{ "ciudad": "Antioquía"}</samp><br><br>
-
-      <h4>Array</h4>
-      <samp>{ <br> &nbsp;&nbsp;"ciudad": "Antioquía" <br> }</samp><br><br>
-
-      <h4>Objeto</h4>
-      <samp>"ciudad": { <br>
-         &nbsp;&nbsp;&nbsp;&nbsp;"ciudad": "Guadalajara", <br>
-         &nbsp;&nbsp;&nbsp;&nbsp;"sigla": "GDL" <br>
-         &nbsp;&nbsp;} <br>
-         }</samp><br><br>
-
-      <h4>String</h4>
-      <samp>{ "ciudades":[ <br>
-         &nbsp;&nbsp;{"ciudad": "Guadalajara", "sigla": "GDL"}, <br>
-         &nbsp;&nbsp;{"ciudad": "Monterrey", "sigla": "MTY"}, <br>
-         &nbsp;&nbsp;{"ciudad": "Guanajuato", "sigla": "GTO"} <br>
-         &nbsp;&nbsp;] <br>
-         }</samp>
+         En una aplicación web Ajax, no se interrumpe el usuario en interacciones con la aplicación web. El motor de
+         Ajax o el intérprete JavaScript permite que el usuario interactúe con la aplicación web independientemente del
+         transporte HTTP procedente del servidor o que tenga el servidor como destino representando la interfaz y
+         gestionando las comunicaciones con el servidor en nombre del usuario.
       </p>
+      <br>
+      <center><img src="./images/ajaxWebAppModel.gif" alt=""></center>
+      <br>
    </div>
    <!-- about section end -->
    <!-- copyright section start -->

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>XML vs JSON</title>
+   <link href="images/favicon.ico" rel="icon">
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+</head>
+
+<body>
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="header_main">
+         <div class="mobile_menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="fadeout.html">fadeOut()</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="fadetoggle.html">fadeToggle()</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="fadeto.html">fadeTo()</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="container-fluid">
+            <div class="logo"><a href="index.html">
+                  <h1 class="banner_taital">XML vs JSON</h1>
+               </a></div>
+            <div class="menu_main">
+               <ul>
+                  <ul>
+                     <li class="active"><a href="index.html">Inicio</a></li>
+                     <li><a href="fadein.html">XML vs JSON</a></li>
+                  </ul>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- header section end -->
+   <!-- about section start -->
+   <div class="container">
+      <p><br></p>
+      <center><b style="font-size: 30px;">Semejanzas y Diferencias entre XML y JSON</b></center>
+      <br>
+      <table class="table" border="2">
+         <thead class="thead-light">
+            <tr>
+               <th scope="col"></th>
+               <th scope="col">XML</th>
+               <th scope="col">JSON</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th scope="row">Diferencias</th>
+               <td>
+                  <ul style="text-align: justify;">
+                     <li>&#176; XML es legible por los humanos pero no necesariamente por las máquinas. Puede utilizarse
+                        para compartir información estructurada entre programas y documentos.</li> <br>
+                     <li>&#176; XML sólo puede almacenarse como archivo de texto.</li> <br>
+                     <li>&#176; XML requieren más espacio de almacenamiento que los archivos JSON (al menos si se
+                        utilizan con Node).</li> <br>
+                     <li>&#176; XML es una forma específica de lenguaje de marcas para almacenar datos de forma
+                        organizada. Tiene más características que JSON, pero también es más complicado porque requiere
+                        más información sobre la estructura del documento antes de poder leerlo.</li> <br>
+                     <li>&#176; XML se utiliza para representar datos de forma legible por la máquina.</li> <br>
+                     <li>&#176; XML tiene algunos problemas de compatibilidad entre plataformas. No es compatible con
+                        muchos lenguajes de programación (excepto Actionscript), por lo que los desarrolladores tienen
+                        que elegir entre utilizar una herramienta como Apache HttpComponents o Apache axis2</li> <br>
+                     <li>&#176; XML tiene una estructura más rígida que JSON, lo que hace más difícil su manipulación
+                        sin romper el documento. Además, la mayoría de los archivos de XML no pueden editarse en un
+                        lugar como los documentos de JSON</li> <br>
+                  </ul>
+               </td>
+               <td>
+                  <ul style="text-align: justify;">
+                     <li>&#176; JSON es ligero y fácil de leer, pero no proporciona información sobre el esquema o el
+                        tipo. Es ideal para compartir datos entre varias aplicaciones.</li> <br>
+                     <li>&#176; JSON puede utilizarse con archivos JavaScript o de texto plano.</li> <br>
+                     <li>&#176; JSON utiliza menos memoria que el programa XML a la hora de procesar la información.
+                        Esto hacen de JSON un formato ideal para procesar
+                        rápidamente grandes cantidades de datos.</li> <br>
+                     <li>&#176; El formato JSON se utiliza para almacenar y transmitir datos</li> <br>
+                     <li>&#176; JSON suele ser más compacto que XML, lo que significa que puede transmitirse más
+                        rápidamente a través de las redes.</li> <br>
+                     <li>&#176; JSON se puede usar en aplicaciones web o móvil sin preocupación de los problemas de
+                        compatibilidad
+                        porque está ampliamente aceptado en la web y en las aplicaciones móviles.</li> <br>
+                     <li>&#176; Para cambiar el valor de un elemento en un documento de JSON, se puede editar el valor
+                        directamente en el editor de texto, y listo.</li>
+                  </ul><br><br>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">Semejanzas</th>
+               <td colspan="2">
+                  <ul>
+                     <li><b>&#176; Tanto JSON como XML son formatos autodescriptivos</b></li>
+                     <li>Los formatos autodescriptivos se diseñaron para que fueran legibles para el ser humano,
+                        legibles para el ser humano, legibles para la máquina y legibles para la máquina.</li>
+                     <br>
+                     <li><b>&#176; Tanto JSON como XML tienen un buen soporte para las definiciones de contenido y la
+                           validación</b></li>
+                     <li>JSON y XML son ampliamente utilizados, por lo que son soportados por muchos lenguajes de
+                        programación. Por ejemplo, JSON es compatible con JavaScript, Python, Perl y Ruby. XML data
+                        también es compatible con muchos lenguajes de programación diferentes: JavaScript, PHP y C# (que
+                        es la versión de Microsoft de C++).</li>
+                     <br>
+                     <li><b>&#176; La serialización de datos</b></li>
+                     <li>JSON y XML pueden utilizarse para la serialización de datos (convertir una estructura de datos
+                        a un formato para su almacenamiento o transmisión). </li>
+                     <br>
+                     <li><b>&#176; Basado en texto</b></li>
+                     <li>Una de las similitudes más evidentes entre estas dos estructuras de datos es que JSON y XML
+                        están basadas en texto. Por ello, muchos creen que JSON se creó para ser una alternativa más
+                        sencilla a XML.</li>
+                     <br>
+                     <li><b>&#176; Estructuras jerárquicas</b></li>
+                     <li>En tercer lugar, ambos formatos tienen estructuras jerárquicas en las que cada campo tiene su
+                        nombre y valor separados por comas.</li>
+                  </ul><br>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- about section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">2022 All Rights Reserved.</a></p>
+      </div>
+   </div>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

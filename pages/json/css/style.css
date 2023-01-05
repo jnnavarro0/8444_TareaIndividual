@@ -959,6 +959,10 @@ button {
     text-align: center;
 }
 
+.list li{
+    list-style:circle;
+}
+
 .social_icon li {
     float: left;
     padding: 30px 5px;

@@ -67,7 +67,7 @@
          </div>
          <div class="container-fluid">
             <div class="logo"><a href="index.html">
-                  <h1 class="banner_taital">Json</h1>
+                  <h1 class="banner_taital">Ajax</h1>
                </a></div>
             <div class="menu_main">
                <ul>
@@ -84,95 +84,62 @@
    <!-- header section end -->
    <!-- about section start -->
    <div class="container">
-      <center><b style="font-size: 30px;">EJEMPLOS JSON Y DISEÑO DE DATOS JSON</b></center>
-      <p>A continuación se muestra el contenido de lo que podrían ser distintos archivos json:</p>
+      <center><b style="font-size: 30px;">EJEMPLOS AJAX</b></center>
+      <div class="row">
+         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__content">
+               <div id="demo">
+                  <h2>The XMLHttpRequest Object</h2>
+                  <button type="button" onclick="loadDoc()">Change Content</button>
+               </div>
 
-      <br>
-
-      <table class="table" border="1">
-         <thead>
-            <tr style="background-color: rgb(226, 226, 226);">
-               <th scope="col">Archivo colores1.json</th>
-               <th scope="col">Archivo colores2.json</th>
-               <th scope="col">Archivo colores3.json</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>
-                  <pre>
-                     <samp>
-{
-    "arrayColores":[{
-            "nombreColor":"rojo",
-            "valorHexadec":"#f00"
-        },
-        {
-            "nombreColor":"verde",
-            "valorHexadec":"#0f0"
-        },
-        {
-            "nombreColor":"azul",
-            "valorHexadec":"#00f"
-        },
-        {
-            "nombreColor":"cyan",
-            "valorHexadec":"#0ff"
-        },
-        {
-            "nombreColor":"magenta",
-            "valorHexadec":"#f0f"
-        },
-        {
-            "nombreColor":"amarillo",
-            "valorHexadec":"#ff0"
-        },
-        {
-            "nombreColor":"negro",
-            "valorHexadec":"#000"
-        }
-    ]
-}
-                  </samp>
-               </pre>
-               </td>
-               <td>
-                  <pre>
-                     <samp>
-{
-    "arrayColores":[{
-            "rojo":"#f00",
-            "verde":"#0f0",
-            "azul":"#00f",
-            "cyan":"#0ff",
-            "magenta":"#f0f",
-            "amarillo":"#ff0",
-            "negro":"#000"
-        }
-    ]
-}
-                  </samp>
-               </pre>
-               </td>
-               <td>
-                  <pre>
-                     <samp>
-{
-    "rojo":"#f00",
-    "verde":"#0f0",
-    "azul":"#00f",
-    "cyan":"#0ff",
-    "magenta":"#f0f",
-    "amarillo":"#ff0",
-    "negro":"#000"
-}
-                  </samp>
-               </pre>
-               </td>
-            </tr>
-         </tbody>
-      </table>
+               <script>
+                  function loadDoc() {
+                     const xhttp = new XMLHttpRequest();
+                     xhttp.onload = function () {
+                        document.getElementById("demo").innerHTML =
+                           this.responseText;
+                     }
+                     xhttp.open("GET", "ajax_info.txt");
+                     xhttp.send();
+                  }
+               </script>
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start" style="border: solid;">
+            <div class="services__pic">
+               <h2>Código</h2>
+               <br>
+               <p>
+                  &#60;!DOCTYPE html> <br>
+                  &#60;html> <br>
+                  &#60;body> <br>
+                  <br>
+                  &#60;div id="demo">
+                  &#60;h2>The XMLHttpRequest Object&#60;/h2> <br>
+                  &#60;button type="button" onclick="loadDoc()">Change Content&#60;/button> <br>
+                  &#60;/div> <br>
+                  <br>
+                  &#60;script> <br>
+                  function loadDoc() { <br>
+                  &nbsp;const xhttp = new XMLHttpRequest(); <br>
+                  &nbsp;&nbsp;xhttp.onload = function() { <br>
+                  &nbsp;&nbsp;document.getElementById("demo").innerHTML =
+                  this.responseText; <br>
+                  &nbsp;} <br>
+                  &nbsp;xhttp.open("GET", "ajax_info.txt"); <br>
+                  &nbsp;xhttp.send(); <br>
+                  } <br>
+                  &#60;/script> <br>
+                  <br>
+                  &#60;/body> <br>
+                  &#60;/html> <br>
+               </p>
+            </div>
+         </div>
+      </div>
    </div>
+   </center>
    <!-- about section end -->
    <p><br></p>
    <!-- copyright section start -->
